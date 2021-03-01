@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>"My Favorite Music</title>
+    <link href="/home/donnie/Documents/web dev music/favmusic.css" rel = "stylesheet" type = "text/css">
+</head>
+<style>
+    h1 {
+    color: black;
+    text-align: left; 
+    display:flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+h2 {
+    color: black;
+    text-align: left; 
+    display:flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;   
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient(
+        115deg,
+                rgb(240,230,140),
+        rgba(136, 136, 206, 0.7)
+      ),
+    url(https://media.giphy.com/media/xT9IgN8YKRhByRBzMI/giphy.gif);
+    background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+p {
+color: black;
+text-align: left; 
+display:flex; 
+flex-direction: column; 
+align-items: center;
+}
+</style>
+<h1>Right Back</h1>
+<h2>by: Khalid </h2>
+    <body>
+    <p>Power<br>
+        Got me sittin' by my phone, I've been waiting for hours<br>
+        On my line, sending mirror pics of you fresh out the shower<br>
+        So I might as well swing over to your place<br>
+        Mmm now<br>
+        It's crowded<br>
+        In LA, but I'll be there at 8 if the traffic allows it<br>
+        Say you're down, I could show you around<br>
+        If you're really about it, yeah<br>
+        But for you, I got something to prove, what do you say?<br>
+        What do you say?<br>
+        Should we bring it right back?<br>
+        Honestly, it's better like that<br>
+        I know we've been falling off track<br>
+        Bring it right back<br>
+        I just let the time roll past<br>
+        We don't gotta take it too fast<br>
+        Bring it right back<br>
+        You don't gotta stay the night<br>
+        I just wanna take the time<br>
+        I know all the things you like<br>
+        Maybe if the mood is right<br>
+        We can bring it right back<br>
+        Saved<br>
+        Got the weed, we can sit by the beach if we wanna get faded<br>
+        But if that's not the vibe, yeah, it's cool<br>
+        We can save it for later, yeah<br>
+        I just like the way it feels when you're around<br>
+        When you're around, ah<br>
+        Now I know we're not dating, nah<br>
+        Maybe soon by the way things go, we've been talking for ages<br>
+        Take it step by step, slow it down, we just need to be patient, love<br>
+        If the love feels good and it's real, it'll all work out<br>
+        It'll all work out, yeah<br>
+        Should we bring it right back?<br>
+        Honestly, it's better like that<br>
+        I know we've been falling off track<br>
+        Bring it right back<br>
+        I just let the time roll past<br>
+        We don't gotta take it too fast<br>
+        Bring it right back<br>
+        You don't gotta stay the night<br>
+        I just wanna take the time<br>
+        I know all the things you like<br>
+        Maybe if the mood is right<br>
+        We can bring it right back<br>
+        So bring it, so bring it<br>
+        So bring it, so bring it back(Bring it back to me, yeah)<br>
+        So bring it, so bring it<br>
+        So bring it, so bring it back<br>
+        So bring it, so bring it<br>
+        So bring it, so bring it back (No no, no, oh yeah)<br>
+        Should we bring it right back?<br>
+        Honestly, it's better like that<br>
+        I know we've been falling off track<br>
+        Bring it right back<br>
+        I just let the time roll past<br>
+        We don't gotta take it too fast<br>
+        Bring it right back<br>
+        You don't gotta stay the night<br>
+        I just wanna take the time<br>
+        I know all the things you like<br>
+        Maybe if the mood is right<br>
+        We can bring it right back<br>
+        Honestly, it's better like that<br>
+        I know we've been falling off track<br>
+        Bring it right back<br>
+        I just let the time roll past<br>
+        We don't gotta take it too fast<br>
+        Bring it right back<br>
+        You don't gotta stay the night<br>
+        I just wanna take the time<br>
+        I know all the things you like<br>
+        Maybe if the mood is right<br>
+        We can bring it right</p>
+</body>
+<audio id="myAudio">
+    <source src="/home/donnie/Documents/web dev music/Khalid - Right Back (feat. A Boogie wit da Hoodie) Lyrics.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  
+  <footer>Click the buttons to play or pause the audio.</footer>
+  
+  <button onclick="playAudio()" type="button">Play</button>
+  <button onclick="pauseAudio()" type="button">Pause</button> 
+  
+  <script>
+  var x = document.getElementById("myAudio"); 
+  
+  function playAudio() { 
+    x.play(); 
+  } 
+  
+  function pauseAudio() { 
+    x.pause(); 
+  } 
+  </script>
+</html>
